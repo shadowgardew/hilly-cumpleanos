@@ -1,4 +1,6 @@
 const target = new Date("2026-09-14T00:00:00-05:00").getTime();
+// Modo secreto de vista previa: solo se activa con ?preview=1
+const previewMode = new URLSearchParams(window.location.search).get("preview") === "1";
 let unlocked = false;
 let attempts = 0;
 
@@ -29,6 +31,13 @@ function setCountdown(prefix, diff) {
 }
 
 function updateCountdown() {
+  if (previewMode) {
+    setCountdown("lock", 0);
+    setCountdown("hero", 0);
+    unlockPage();
+    return;
+  }
+
   const diff = target - Date.now();
 
   if (diff <= 0) {
