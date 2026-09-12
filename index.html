@@ -7,7 +7,23 @@
   <title>Para Hilly 🌹</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="locked">
+  <div class="lock-screen" id="lockScreen">
+    <div class="lock-card">
+      <div class="lock-icon">🔒</div>
+      <p class="eyebrow">UN PEQUEÑO DETALLE PARA TI</p>
+      <h2>Hilly, todavía no 👀</h2>
+      <p id="lockMessage">Tu regalo está guardado y solo se puede abrir cuando termine el contador.</p>
+      <div class="countdown" aria-label="Cuenta regresiva">
+        <div><strong id="days">00</strong><span>días</span></div>
+        <div><strong id="hours">00</strong><span>horas</span></div>
+        <div><strong id="minutes">00</strong><span>min</span></div>
+        <div><strong id="seconds">00</strong><span>seg</span></div>
+      </div>
+      <button class="primary tease-button" id="tryOpen">Intentar abrir el regalo 🎁</button>
+      <p class="tiny">Sí, puedes intentarlo... pero no prometo que te deje 😅</p>
+    </div>
+  </div>
   <div class="stars" aria-hidden="true"></div>
 
   <main>
@@ -16,7 +32,7 @@
       <h1>Feliz cumpleaños,<br><span>Hilly 🌹</span></h1>
       <p class="subtitle">Aunque hoy no pueda estar ahí contigo, hice un pequeño lugar en internet para dejarte algo mío.</p>
 
-      <div class="countdown" id="countdown" aria-label="Cuenta regresiva">
+      <div class="countdown" id="heroCountdown" aria-label="Cuenta regresiva">
         <div><strong id="days">00</strong><span>días</span></div>
         <div><strong id="hours">00</strong><span>horas</span></div>
         <div><strong id="minutes">00</strong><span>min</span></div>

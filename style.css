@@ -260,6 +260,11 @@ footer {
   background: rgba(255,255,255,.08);
 }
 
+
+/* Pantalla de bloqueo */
+.lock-screen{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 50% 35%,rgba(59,23,43,.96),rgba(9,7,13,.985) 65%);backdrop-filter:blur(8px)}
+.lock-card{width:min(620px,100%);padding:clamp(28px,7vw,52px);text-align:center;border:1px solid rgba(255,141,169,.25);border-radius:28px;background:rgba(255,255,255,.07);box-shadow:0 30px 100px rgba(0,0,0,.45);animation:pop .6s ease both}
+.lock-icon{font-size:3.2rem;margin-bottom:12px;animation:pulse 1.8s infinite}.lock-card h2{font-size:clamp(2.1rem,7vw,3.5rem);margin:8px 0 15px}.lock-card>p:not(.eyebrow):not(.tiny){color:var(--muted);line-height:1.7;min-height:55px}.lock-card .countdown{margin:25px auto 30px;justify-content:center}.tease-button{min-width:235px}.lock-screen.hidden{animation:unlockFade .7s ease forwards;pointer-events:none}body.locked main{pointer-events:none;user-select:none;height:100vh;overflow:hidden}body.locked .hero{filter:blur(4px)}.shake{animation:shake .35s ease}@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px) rotate(-.5deg)}40%{transform:translateX(8px) rotate(.5deg)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}@keyframes unlockFade{to{opacity:0;visibility:hidden;transform:scale(1.04)}}
 #confetti { position: fixed; inset: 0; pointer-events: none; z-index: 10; }
 .toast {
   position: fixed;
