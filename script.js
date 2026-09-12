@@ -173,7 +173,7 @@ function burstConfetti() {
 }
 
 window.addEventListener("load", () => {
-  setTimeout(() => showToast("Hay una carta esperándote, Hilly ✉️"), 900);
+  setTimeout(() => showToast("Feliz cumpleaños, Hilly. TE QUIERO MUCHO 😙🫶✉️"), 900);
 });
 
 updateCountdown();
