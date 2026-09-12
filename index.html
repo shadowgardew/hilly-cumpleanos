@@ -3,69 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#120c18">
-  <title>Para Hilly 🌹</title>
+  <meta name="theme-color" content="#1c120d">
+  <title>Una carta para Hilly ✉️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="locked">
+  <div class="paper-noise" aria-hidden="true"></div>
+
   <div class="lock-screen" id="lockScreen">
     <div class="lock-card">
-      <div class="lock-icon">🔒</div>
-      <p class="eyebrow">UN PEQUEÑO DETALLE PARA TI</p>
-      <h2>Hilly, todavía no 👀</h2>
-      <p id="lockMessage">Tu regalo está guardado y solo se puede abrir cuando termine el contador.</p>
-      <div class="countdown" aria-label="Cuenta regresiva">
-        <div><strong id="days">00</strong><span>días</span></div>
-        <div><strong id="hours">00</strong><span>horas</span></div>
-        <div><strong id="minutes">00</strong><span>min</span></div>
-        <div><strong id="seconds">00</strong><span>seg</span></div>
+      <div class="archive-stamp">ARCHIVO PRIVADO · 14.09.26</div>
+      <div class="envelope-icon" aria-hidden="true">✉️</div>
+      <p class="lock-eyebrow">UNA CARTA PARA HILLY</p>
+      <h1>Hilly, todavía no 👀</h1>
+      <p class="lock-intro">
+        ¿Te acuerdas de aquella carta que te hice hace mucho tiempo? 😅
+        Esta vez la guardé en un lugar un poquito más difícil de encontrar.
+      </p>
+      <p class="hidden-joke">Esta carta sí no la podrán pillar. 🤫</p>
+
+      <div class="lock-countdown" aria-label="Cuenta regresiva">
+        <div><strong id="lockDays">00</strong><span>días</span></div>
+        <div><strong id="lockHours">00</strong><span>horas</span></div>
+        <div><strong id="lockMinutes">00</strong><span>min</span></div>
+        <div><strong id="lockSeconds">00</strong><span>seg</span></div>
       </div>
-      <button class="primary tease-button" id="tryOpen">Intentar abrir el regalo 🎁</button>
-      <p class="tiny">Sí, puedes intentarlo... pero no prometo que te deje 😅</p>
+
+      <button class="seal-button" id="tryOpen">Intentar romper el sello 🔐</button>
+      <p class="lock-message" id="lockMessage">El sobre permanece sellado hasta el 14 de septiembre. 😌</p>
+      <div class="wax-seal">H</div>
     </div>
   </div>
+
   <div class="stars" aria-hidden="true"></div>
 
   <main>
     <section class="hero">
       <p class="eyebrow">14 · SEPTIEMBRE · 2026</p>
-      <h1>Feliz cumpleaños,<br><span>Hilly 🌹</span></h1>
-      <p class="subtitle">Aunque hoy no pueda estar ahí contigo, hice un pequeño lugar en internet para dejarte algo mío.</p>
+      <h1>Feliz cumpleaños,<br><span>Hilly ✉️</span></h1>
+      <p class="subtitle">Una pequeña carta digital, inspirada en aquella que te hice hace tiempo.</p>
 
       <div class="countdown" id="heroCountdown" aria-label="Cuenta regresiva">
-        <div><strong id="days">00</strong><span>días</span></div>
-        <div><strong id="hours">00</strong><span>horas</span></div>
-        <div><strong id="minutes">00</strong><span>min</span></div>
-        <div><strong id="seconds">00</strong><span>seg</span></div>
+        <div><strong id="heroDays">00</strong><span>días</span></div>
+        <div><strong id="heroHours">00</strong><span>horas</span></div>
+        <div><strong id="heroMinutes">00</strong><span>min</span></div>
+        <div><strong id="heroSeconds">00</strong><span>seg</span></div>
       </div>
 
-      <button class="primary" id="openLetter">Abrir mi carta 💌</button>
-      <p class="tiny">Hecha especialmente para ti.</p>
+      <button class="primary" id="openLetter">Abrir la carta ✉️</button>
+      <p class="tiny">Pero solo cuando llegue el momento.</p>
     </section>
 
     <section class="letter-section" id="letterSection">
       <div class="letter">
-        <div class="seal">🌹</div>
-        <p class="date">14 de septiembre</p>
+        <div class="letter-top">✦ UNA CARTA QUE SÍ ESTÁ A SALVO ✦</div>
+        <div class="seal">H</div>
+        <p class="date">14 de septiembre de 2026</p>
         <h2>Para ti, Hilly</h2>
+        <p class="remember">¿Te acuerdas de aquella carta que te hice hace mucho tiempo?</p>
         <p>
-          Hoy quería regalarte algo que no necesitara envoltura ni pudiera perderse en el camino.
-          Así que hice esto para ti.
+          Esta vez quise hacer algo diferente. Nada de una hoja que pueda perderse,
+          guardarse en cualquier lado o terminar quién sabe dónde. Esta quedó aquí,
+          escondida en internet, esperando exactamente hasta tu cumpleaños.
         </p>
         <p>
-          Sé que no puedo estar contigo físicamente para darte un abrazo, molestarte un rato,
-          escuchar tu risa o simplemente pasar tiempo juntos. Pero eso no significa que no pueda
-          hacerte sentir un poquito especial desde donde estoy.
+          Aunque ya hayan pasado muchas cosas desde aquella primera carta,
+          hay algo que sigue igual: me alegra muchísimo haberte conocido y poder
+          compartir contigo tantos momentos, conversaciones y bobadas que terminan
+          haciéndonos reír.
         </p>
         <p>
-          Espero que este nuevo año de tu vida venga con momentos bonitos, sueños que empiecen
-          a hacerse realidad y muchas razones para sonreír.
+          Espero que este nuevo año de tu vida venga cargado de momentos bonitos,
+          metas cumplidas, tranquilidad y muchas razones para sonreír.
         </p>
         <p>
-          Y si alguna vez tienes un día difícil, vuelve aquí y recuerda algo:
-          <b>hay alguien que se alegra de haberte conocido.</b>
+          Y si algún día vuelves a encontrar esta carta por casualidad,
+          recuerda que fue hecha pensando en que tu cumpleaños merecía un detalle distinto.
         </p>
-        <p class="signature">— Yesid 🫶</p>
+        <p class="signature">— Yesid ✍️</p>
+        <div class="paper-note">P.D. Esta vez sí quedó bien escondida. 😅</div>
       </div>
     </section>
 
@@ -85,8 +101,8 @@
         </article>
         <article class="card">
           <span>03</span>
-          <h3>Tu corazón</h3>
-          <p>Has dejado una huella bonita en mí, y eso no se borra simplemente porque estemos lejos.</p>
+          <h3>Los recuerdos</h3>
+          <p>Porque algunas cosas cambian con el tiempo, pero hay recuerdos que vale la pena conservar.</p>
         </article>
       </div>
     </section>
@@ -101,20 +117,19 @@
       <h2>Hay una última sorpresa…</h2>
       <p>Haz clic en el regalo.</p>
       <div class="surprise-message" id="surpriseMessage">
-        <div class="big-heart">❤️</div>
-        <h3>Te debo un abrazo.</h3>
-        <p>Y cuando por fin nos veamos, pienso cobrarlo con intereses. 😌🫶</p>
+        <div class="big-heart">✉️</div>
+        <h3>Y sí, era para ti.</h3>
+        <p>Feliz cumpleaños, Hilly. Gracias por formar parte de tantos recuerdos bonitos. 🫶</p>
       </div>
     </section>
 
     <footer>
-      <p>Hecho con cariño para Hilly 🌹</p>
-      <button id="musicToggle" class="music-btn" aria-label="Activar sonido">♪</button>
+      <p>Escrito y escondido especialmente para Hilly ✉️</p>
     </footer>
   </main>
 
   <canvas id="confetti"></canvas>
-  <div class="toast" id="toast">Feliz cumpleaños, Hilly 🌹</div>
+  <div class="toast" id="toast">Feliz cumpleaños, Hilly ✉️</div>
 
   <script src="script.js"></script>
 </body>
