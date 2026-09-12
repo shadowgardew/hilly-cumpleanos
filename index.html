@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120c18">
+  <title>Para Hilly 🌹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">14 · SEPTIEMBRE · 2026</p>
+      <h1>Feliz cumpleaños,<br><span>Hilly 🌹</span></h1>
+      <p class="subtitle">Aunque hoy no pueda estar ahí contigo, hice un pequeño lugar en internet para dejarte algo mío.</p>
+
+      <div class="countdown" id="countdown" aria-label="Cuenta regresiva">
+        <div><strong id="days">00</strong><span>días</span></div>
+        <div><strong id="hours">00</strong><span>horas</span></div>
+        <div><strong id="minutes">00</strong><span>min</span></div>
+        <div><strong id="seconds">00</strong><span>seg</span></div>
+      </div>
+
+      <button class="primary" id="openLetter">Abrir mi carta 💌</button>
+      <p class="tiny">Hecha especialmente para ti.</p>
+    </section>
+
+    <section class="letter-section" id="letterSection">
+      <div class="letter">
+        <div class="seal">🌹</div>
+        <p class="date">14 de septiembre</p>
+        <h2>Para ti, Hilly</h2>
+        <p>
+          Hoy quería regalarte algo que no necesitara envoltura ni pudiera perderse en el camino.
+          Así que hice esto para ti.
+        </p>
+        <p>
+          Sé que no puedo estar contigo físicamente para darte un abrazo, molestarte un rato,
+          escuchar tu risa o simplemente pasar tiempo juntos. Pero eso no significa que no pueda
+          hacerte sentir un poquito especial desde donde estoy.
+        </p>
+        <p>
+          Espero que este nuevo año de tu vida venga con momentos bonitos, sueños que empiecen
+          a hacerse realidad y muchas razones para sonreír.
+        </p>
+        <p>
+          Y si alguna vez tienes un día difícil, vuelve aquí y recuerda algo:
+          <b>hay alguien que se alegra de haberte conocido.</b>
+        </p>
+        <p class="signature">— Yesid 🫶</p>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <p class="eyebrow">UN PEQUEÑO RECORDATORIO</p>
+      <h2>Algunas cosas que me gustan de ti</h2>
+      <div class="cards">
+        <article class="card">
+          <span>01</span>
+          <h3>Tu risa</h3>
+          <p>Esa que según tú debería reconocer entre cien mujeres… aunque claramente esa pregunta era una trampa 😂.</p>
+        </article>
+        <article class="card">
+          <span>02</span>
+          <h3>Tu forma de ser</h3>
+          <p>Incluso cuando dices que eres intensa, tienes una manera muy tuya de demostrar que te importa alguien.</p>
+        </article>
+        <article class="card">
+          <span>03</span>
+          <h3>Tu corazón</h3>
+          <p>Has dejado una huella bonita en mí, y eso no se borra simplemente porque estemos lejos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="surprise">
+      <div class="gift-box" id="giftBox" role="button" tabindex="0" aria-label="Abrir sorpresa">
+        <div class="gift-lid"></div>
+        <div class="gift-body"></div>
+        <div class="ribbon-v"></div>
+        <div class="ribbon-h"></div>
+      </div>
+      <h2>Hay una última sorpresa…</h2>
+      <p>Haz clic en el regalo.</p>
+      <div class="surprise-message" id="surpriseMessage">
+        <div class="big-heart">❤️</div>
+        <h3>Te debo un abrazo.</h3>
+        <p>Y cuando por fin nos veamos, pienso cobrarlo con intereses. 😌🫶</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Hecho con cariño para Hilly 🌹</p>
+      <button id="musicToggle" class="music-btn" aria-label="Activar sonido">♪</button>
+    </footer>
+  </main>
+
+  <canvas id="confetti"></canvas>
+  <div class="toast" id="toast">Feliz cumpleaños, Hilly 🌹</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
